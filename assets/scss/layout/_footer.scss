@@ -1,0 +1,13 @@
+/*
+ * Footer styles
+ */
+
+ footer {
+ 	flex-shrink: 0;
+ 	height: 5.2rem;
+ 	background-color: $purple;
+ 	color: $pink;
+ 	text-align: center;
+ 	display: flex;
+ 	align-items: center;
+ }

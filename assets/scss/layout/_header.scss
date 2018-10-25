@@ -1,0 +1,35 @@
+/*
+ * Header styles
+ */
+
+ header {
+ 	margin-top: 14rem;
+ 	display: flex;
+ 	justify-content: center;
+ 	text-align: center;
+ 	p {
+ 		@include sm-up {
+ 			max-width: 60rem;
+ 			white-space: nowrap;
+ 		}
+ 	}
+ 	.container > * {
+ 		margin: 1.8rem 0;
+ 	}
+ 	.down-arrow {
+ 		animation: bounce .5s alternate infinite;
+	 	margin: 14rem 0 7rem;
+	 	img {
+	 		height: 6rem;
+	 	}
+ 	}
+ 	button {
+ 		margin-top: 1rem;
+ 	}
+ }
+
+ @keyframes bounce {
+ 	from { transform: translateY(.5rem); }
+    to { transform: translateY(-.5rem); }
+ }
+

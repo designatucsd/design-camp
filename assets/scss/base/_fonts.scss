@@ -1,0 +1,11 @@
+/*
+ * @font-face declarations
+ */
+
+ @font-face {
+  font-family: 'Freight';
+  src: url('../fonts/Freight-BigBold.woff2') format('woff2'),
+      url('../fonts/Freight-BigBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
