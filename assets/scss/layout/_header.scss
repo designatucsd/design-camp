@@ -3,10 +3,16 @@
  */
 
  header {
- 	margin-top: 14rem;
+ 	margin-top: 8rem;
  	display: flex;
  	justify-content: center;
  	text-align: center;
+ 	@include sm-up {
+ 		margin-top: 10rem;
+ 	}
+ 	@include md-up {
+ 		margin-top: 14rem;
+ 	}
  	p {
  		@include sm-up {
  			max-width: 60rem;
@@ -17,6 +23,7 @@
  		margin: 1.8rem 0;
  	}
  	.down-arrow {
+ 		display: block;
  		animation: bounce .5s alternate infinite;
 	 	margin: 14rem 0 7rem;
 	 	img {

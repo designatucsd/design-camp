@@ -349,7 +349,7 @@ footer a::before {
  * Header styles
  */
 header {
-  margin-top: 14rem;
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,12 +358,19 @@ header {
           justify-content: center;
   text-align: center; }
   @media (min-width: 600px) {
+    header {
+      margin-top: 10rem; } }
+  @media (min-width: 840px) {
+    header {
+      margin-top: 14rem; } }
+  @media (min-width: 600px) {
     header p {
       max-width: 60rem;
       white-space: nowrap; } }
   header .container > * {
     margin: 1.8rem 0; }
   header .down-arrow {
+    display: block;
     -webkit-animation: bounce .5s alternate infinite;
             animation: bounce .5s alternate infinite;
     margin: 14rem 0 7rem; }
