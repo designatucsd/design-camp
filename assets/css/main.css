@@ -362,7 +362,7 @@ header {
       margin-top: 10rem; } }
   @media (min-width: 840px) {
     header {
-      margin-top: 14rem; } }
+      margin-top: 14.2rem; } }
   @media (min-width: 600px) {
     header p {
       max-width: 60rem;
@@ -370,7 +370,6 @@ header {
   header .container > * {
     margin: 1.8rem 0; }
   header .down-arrow {
-    display: block;
     -webkit-animation: bounce .5s alternate infinite;
             animation: bounce .5s alternate infinite;
     margin: 14rem 0 7rem; }
