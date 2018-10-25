@@ -359,10 +359,10 @@ header {
   text-align: center; }
   @media (min-width: 600px) {
     header {
-      margin-top: 10rem; } }
+      margin-top: 12rem; } }
   @media (min-width: 840px) {
     header {
-      margin-top: 14.2rem; } }
+      margin-top: 16rem; } }
   @media (min-width: 600px) {
     header p {
       max-width: 60rem;
