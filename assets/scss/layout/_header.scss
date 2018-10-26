@@ -3,7 +3,7 @@
  */
 
  header {
- 	margin-top: 8rem;
+	margin-top: 8rem;
  	display: flex;
  	justify-content: center;
  	text-align: center;
@@ -13,12 +13,12 @@
  	@include md-up {
  		margin-top: 16rem;
  	}
- 	p {
- 		@include sm-up {
- 			max-width: 60rem;
- 			white-space: nowrap;
- 		}
- 	}
+	br {
+		display: none;
+		@include xs-up {
+			display: inline;
+		}
+	}
  	.container > * {
  		margin: 1.8rem 0;
  	}
@@ -36,9 +36,11 @@
 
  @keyframes bounce {
  	from {
+		-webkit-transform: translate3d(0, .5rem, 0);
 		transform: translate3d(0, .5rem, 0);
 	}
     to {
+		-webkit-transform: translate3d(0, .5rem, 0);
 		transform: translate3d(0, -.5rem, 0);
 	}
  }

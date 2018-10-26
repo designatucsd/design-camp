@@ -355,10 +355,11 @@ header {
   @media (min-width: 840px) {
     header {
       margin-top: 16rem; } }
-  @media (min-width: 600px) {
-    header p {
-      max-width: 60rem;
-      white-space: nowrap; } }
+  header br {
+    display: none; }
+    @media (min-width: 480px) {
+      header br {
+        display: inline; } }
   header .container > * {
     margin: 1.8rem 0; }
   header .down-arrow {
@@ -373,18 +374,18 @@ header {
 @-webkit-keyframes bounce {
   from {
     -webkit-transform: translate3d(0, 0.5rem, 0);
-            transform: translate3d(0, 0.5rem, 0); }
+    transform: translate3d(0, 0.5rem, 0); }
   to {
-    -webkit-transform: translate3d(0, -0.5rem, 0);
-            transform: translate3d(0, -0.5rem, 0); } }
+    -webkit-transform: translate3d(0, 0.5rem, 0);
+    transform: translate3d(0, -0.5rem, 0); } }
 
 @keyframes bounce {
   from {
     -webkit-transform: translate3d(0, 0.5rem, 0);
-            transform: translate3d(0, 0.5rem, 0); }
+    transform: translate3d(0, 0.5rem, 0); }
   to {
-    -webkit-transform: translate3d(0, -0.5rem, 0);
-            transform: translate3d(0, -0.5rem, 0); } }
+    -webkit-transform: translate3d(0, 0.5rem, 0);
+    transform: translate3d(0, -0.5rem, 0); } }
 
 /*
  * Footer styles
