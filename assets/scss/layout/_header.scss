@@ -35,7 +35,11 @@
  }
 
  @keyframes bounce {
- 	from { transform: translateY(.5rem); }
-    to { transform: translateY(-.5rem); }
+ 	from {
+		transform: translate3d(0, .5rem, 0);
+	}
+    to {
+		transform: translate3d(0, -.5rem, 0);
+	}
  }
 

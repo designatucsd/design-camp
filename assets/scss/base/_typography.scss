@@ -59,14 +59,3 @@ footer {
  		border-color: $pink;
  	}
 }
-
-.rsvp {
-	position: relative;
-	&::after {
-		content: '→';
-		margin-left: 1rem;
-		position: absolute;
-		display: inline-block;
-		margin-top: -0.1rem;
-	}
-}

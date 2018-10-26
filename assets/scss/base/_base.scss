@@ -65,7 +65,7 @@ main {
 }
 
 #sessions {
-	counter-reset: session;
+	counter-reset: session 4;
 }
 
 section {
@@ -97,12 +97,13 @@ section {
 	font-weight: 600;
 	color: $pink;
 	height: 4rem;
-	width: 4rem; 
+	padding: 0 1.2rem;
+	//width: 4rem; 
 	background-color: $purple;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.7rem;
 	&::before {
 		counter-increment: session;
-  	content: counter(session); 
+  	content: "Week " counter(session); 
 		display: inline-block;
 		margin-top: .35rem;
 	}
