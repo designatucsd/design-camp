@@ -1,1 +1,1 @@
-# static-boilerplate
+# Design Camp
