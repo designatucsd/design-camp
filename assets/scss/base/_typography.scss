@@ -44,9 +44,9 @@ p a {
     border-bottom: .2rem solid $purple;  
     transition: border .3s;
 	}
-	&:hover {
+	@include hover {
 		&::before {            
-	    border-color: transparent;  
+	    	border-color: transparent;  
 		}
 	}
 }

@@ -142,7 +142,7 @@ button:focus {
  */
 html {
   font-size: 45%; }
-  @media (min-width: 600px) {
+  @media (min-width: 840px) {
     html {
       font-size: 62.5%; } }
   @media (min-width: 1440px) {
@@ -171,7 +171,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   padding: 0 8vw; }
-  @media (min-width: 840px) {
+  @media (min-width: 600px) {
     .container {
       padding: 0 12vw; } }
 
@@ -181,13 +181,13 @@ main {
 .text {
   text-align: left;
   margin-top: 5rem; }
-  @media (min-width: 840px) {
+  @media (min-width: 600px) {
     .text {
       margin-top: 0; } }
 
 .image {
   width: 100%; }
-  @media (min-width: 840px) {
+  @media (min-width: 600px) {
     .image {
       height: 15rem;
       width: 20rem;
@@ -210,7 +210,7 @@ section {
   padding: 5.5rem 0; }
   section:not(:last-child) {
     border-bottom: 0.2rem #1A237E dashed; }
-  @media (min-width: 840px) {
+  @media (min-width: 600px) {
     section {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -257,11 +257,12 @@ button {
   transition: background-color .3s, color .3s;
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
-  button:hover {
-    color: #1A237E;
-    background-color: #FFDFE2;
-    border: 0.2rem #1A237E dashed;
-    padding: 1.5rem 2.3rem; }
+  @media (hover: hover) {
+    button:hover {
+      color: #1A237E;
+      background-color: #FFDFE2;
+      border: 0.2rem #1A237E dashed;
+      padding: 1.5rem 2.3rem; } }
 
 #cta .container {
   margin: 4rem 0 11rem;
@@ -327,8 +328,9 @@ p a {
     border-bottom: 0.2rem solid #1A237E;
     -webkit-transition: border .3s;
     transition: border .3s; }
-  p a:hover::before {
-    border-color: transparent; }
+  @media (hover: hover) {
+    p a:hover::before {
+      border-color: transparent; } }
 
 footer p {
   line-height: 0; }

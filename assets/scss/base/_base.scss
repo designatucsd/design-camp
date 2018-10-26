@@ -3,7 +3,7 @@
  */
 html {
 	font-size: 45%;
-	@include sm-up {
+	@include md-up {
 		font-size: 62.5%;
 	}
 	@include xl-up {
@@ -29,7 +29,7 @@ main {
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 8vw;
-	@include md-up {
+	@include sm-up {
 		padding: 0 12vw;
 	}
 }
@@ -41,14 +41,14 @@ main {
 .text {	
 	text-align: left;
 	margin-top: 5rem;
-	@include md-up {
+	@include sm-up {
 		margin-top: 0;
 	}
 }
 
 .image {
 	width: 100%;
-	@include md-up {
+	@include sm-up {
 		height: 15rem;
 		width: 20rem;
 		flex-shrink: 0;
@@ -73,7 +73,7 @@ section {
 	&:not(:last-child) {
 		border-bottom: .2rem $purple dashed;
 	}
-	@include md-up {
+	@include sm-up {
 		display: flex;
 		flex-direction: row;
 		&:nth-child(odd) {
@@ -118,7 +118,7 @@ button {
 	cursor: pointer;
 	transition: background-color .3s, color .3s;
 	box-sizing: content-box;
-	&:hover {
+	@include hover {
 		color: $purple;
 		background-color: $pink;
 		border: .2rem $purple dashed;
